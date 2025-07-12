@@ -2705,6 +2705,8 @@ PLAYWRIGHT_WS_URI = PersistentConfig(
     "PLAYWRIGHT_WS_URI",
     "rag.web.loader.engine.playwright.ws.uri",
     os.environ.get("PLAYWRIGHT_WS_URI", None),
+)
+
 PERPLEXITY_MODEL = PersistentConfig(
     "PERPLEXITY_MODEL",
     "rag.web.search.perplexity_model",
