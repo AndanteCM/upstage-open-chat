@@ -1978,7 +1978,7 @@ async def process_web_search(
 
             docs = [
                 Document(
-                    page_content=result.snippet,
+                    page_content=result.snippet or "",
                     metadata={
                         "source": result.link,
                         "title": result.title,
