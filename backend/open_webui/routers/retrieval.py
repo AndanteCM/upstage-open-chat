@@ -2058,7 +2058,7 @@ async def process_web_search(
                 if hasattr(result, "snippet")
             ]
             for search_result in search_results:
-                print(search_result[:50])
+                print(f"SearchResult - Title: {search_result.title[:50] if search_result.title else 'No title'}, Link: {search_result.link[:50] if search_result.link else 'No link'}")
         else:
             loader = get_web_loader(
                 urls,

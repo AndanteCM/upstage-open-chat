@@ -471,7 +471,6 @@ from open_webui.utils.redis import get_redis_connection
 
 from open_webui.tasks import (
     redis_task_command_listener,
-    list_task_ids_by_chat_id,
     list_task_ids_by_item_id,
     stop_task,
     list_tasks,
